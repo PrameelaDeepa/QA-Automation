@@ -8,4 +8,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="CalcClassLibrary">
+      <HintPath>..\..\CalcClassLibrary\bin\Debug\net6.0\CalcClassLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
