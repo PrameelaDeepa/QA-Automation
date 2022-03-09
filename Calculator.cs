@@ -3,20 +3,23 @@
 namespace QAAutomation
 {
 
-    public class Program
+    public class Calculator
     {
          public static void Main(string[] args)
 
 
-        {
+         {
+            
+            Console.WriteLine("Enter two numbers ");
+            int A = Convert.ToInt32(Console.ReadLine());
+            int B = Convert.ToInt32(Console.ReadLine());
 
-            Algebra alg1 = new Algebra(20, 10); 
+            Algebra alg1 = new Algebra();
 
-
-            Console.WriteLine("ADD : " + alg1.Add());
-            Console.WriteLine("Substract : " + alg1.Substract());
-            Console.WriteLine("Multiply : " + alg1.Multiply());
-            Console.WriteLine("Divide : " + alg1.Divide());
+            Console.WriteLine("ADD : " + alg1.Add(A,B));
+            Console.WriteLine("Substract : " + alg1.Substract(A,B));
+            Console.WriteLine("Multiply : " + alg1.Multiply(A,B));
+            Console.WriteLine("Divide : " + alg1.Divide(A,B));
 
 
 
