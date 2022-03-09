@@ -1,25 +1,27 @@
-using CalcClassLibrary;
+   //using CalcClassLibrary;
 
-namespace Caliculator;
-public class Program
+namespace QAAutomation
 {
-	public static void Main(string[] args)
+
+    public class Program
+    {
+         public static void Main(string[] args)
 
 
-	{
-		int a;
-		int b;
-        Algebra alg = new Algebra();
-		Console.WriteLine("Enter two numbers");
-		 a = Convert.ToInt32(Console.ReadLine());
+        {
 
-		 b = Convert.ToInt32(Console.ReadLine());
+            Algebra alg1 = new Algebra(20, 10); 
 
-		Console.WriteLine("Sum "+alg.Add(a, b));
-		Console.WriteLine("Substract "+ alg.Substract(a, b));
-		Console.WriteLine("multiply" + alg.Multiply(a, b));
-		Console.WriteLine("Divide " + alg.Divide(a, b));
 
-	}
+            Console.WriteLine("ADD : " + alg1.Add());
+            Console.WriteLine("Substract : " + alg1.Substract());
+            Console.WriteLine("Multiply : " + alg1.Multiply());
+            Console.WriteLine("Divide : " + alg1.Divide());
+
+
+
+        }
+        
+    }
 }
 
