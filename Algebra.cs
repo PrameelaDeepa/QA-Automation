@@ -5,7 +5,13 @@ namespace QAAutomation
 {
     public class Algebra
     {
-
+        int A;
+        int B;
+        public Algebra(int a, int b)
+        {
+            this.A = a;
+            this.B = b;
+        }
         
             public   int Add(int a, int b)
             { return a + b; }

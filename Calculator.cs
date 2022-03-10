@@ -12,9 +12,9 @@ namespace QAAutomation
             
             Console.WriteLine("Enter two numbers ");
             int A = Convert.ToInt32(Console.ReadLine());
-            int B = Convert.ToInt32(Console.ReadLine());
+           int B = Convert.ToInt32(Console.ReadLine());
 
-            Algebra alg1 = new Algebra();
+            var alg1 = new Algebra(A , B);
 
             Console.WriteLine("ADD : " + alg1.Add(A,B));
             Console.WriteLine("Substract : " + alg1.Substract(A,B));
