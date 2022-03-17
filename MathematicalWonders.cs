@@ -94,7 +94,31 @@ namespace QAAutomation
                 b = c;
             }
 
+           
 
+        }
+
+        public void PascalTriangle()
+        {
+
+            int row, c = 1, blk, i, j;
+            Console.WriteLine("------------PASCAL TRIANGLE---------------");
+            Console.Write("Input number of rows: ");
+            row = Convert.ToInt32(Console.ReadLine());
+            for (i = 0; i < row; i++)
+            {
+                for (blk = 1; blk <= row - i; blk++)
+                    Console.Write("  ");
+                for (j = 0; j <= i; j++)
+                {
+                    if (j == 0 || i == 0)
+                        c = 1;
+                    else
+                        c = c * (i - j + 1) / j;
+                    Console.Write("{0}   ", c);
+                }
+                Console.Write("\n");
+            }
         }
 
     }

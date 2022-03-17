@@ -93,6 +93,8 @@ namespace QAAutomation
             //Console.WriteLine("Divide : " + alg3.Divide());
 
             var fib = new MathematicalWonders();
+            Console.WriteLine("\n");
+            fib.PascalTriangle();
             
 
         }
